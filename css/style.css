@@ -1,0 +1,165 @@
+header {
+    background-color: #2775c4;  /* Warna latar belakang header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Menambahkan shadow di bawah header */
+  }
+  
+    .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Animasi untuk menu navigasi */
+    .nav-link {
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  /* Efek hover */
+  .nav-link:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  /* Garis bawah animasi saat hover */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  
+
+  /* Animasi untuk form */
+@keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Styling Umum untuk Form Input */
+form .form-control {
+    margin-bottom: 10px; /* Jarak antar input */
+  }
+  
+  /* Media query untuk perangkat dengan lebar layar kecil */
+  @media (max-width: 768px) {
+    .form-control {
+      margin-bottom: 15px; /* Jarak lebih banyak pada layar kecil */
+    }
+  
+    /* Pastikan kolom input pada perangkat kecil memenuhi lebar */
+    .col-md-2 {
+      max-width: 100%;
+    }
+  
+    /* Adjust container padding if necessary */
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+
+  /* Styling untuk seluruh form */
+  #login-form {
+    animation: slideDown 0.6s ease-out; /* Animasi form login */
+  }
+  
+  /* Styling untuk username dan password */
+  #username, #password {
+    border-radius: 8px;
+  }
+  
+  /* Styling untuk tombol */
+  #btn-back, #btn-login {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  /* Efek saat hover pada tombol */
+  #btn-back:hover, #btn-login:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efek hover khusus untuk tombol Back */
+  #btn-back:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Efek hover khusus untuk tombol Login */
+  #btn-login:hover {
+    background-color: #007bff;
+  }
+
+/* Footer Styling */
+footer {
+    position: relative; /* Gunakan relative untuk memastikan footer berada di bawah konten */
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* Styling untuk kotak-kotak */
+.box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+    margin-bottom: 15px;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#pemasukanChart {
+    width: 100%;
+    height: 400px; /* Atur tinggi canvas sesuai kebutuhan */
+  }
+
+  .username-display {
+    font-size: 1.2rem; /* Ukuran font yang lebih besar */
+    font-weight: bold; /* Menebalkan teks */
+    color: #333; /* Warna teks yang gelap */
+    padding: 5px 10px; /* Menambahkan padding di sekitar teks */
+    background-color: #f8f9fa; /* Warna latar belakang terang */
+    border-radius: 5px; /* Membulatkan sudut */
+  }
+  
+
+  /* CSS untuk menu yang aktif */
+.nav-link.active {
+  font-weight: bold;  /* Menebalkan teks */
+  color: #007bff; /* Mengubah warna teks menjadi biru (atau bisa disesuaikan) */
+  background-color: #e9ecef; /* Memberikan latar belakang saat item aktif */
+  border-radius: 4px; /* Memberikan sedikit border radius agar lebih rapi */
+}
+
+/* Opsional: Mengubah warna teks saat hover pada item yang aktif */
+.nav-link.active:hover {
+  color: #0056b3; /* Mengubah warna saat hover */
+  background-color: #e2e6ea; /* Memberikan latar belakang lebih terang saat hover */
+}
